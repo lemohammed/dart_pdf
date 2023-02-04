@@ -111,6 +111,8 @@ class Document {
 
   final List<Page> _pages = <Page>[];
 
+  List<Page> get pdfPages => _pages;
+
   bool _paint = false;
 
   void addPage(Page page, {int? index}) {
